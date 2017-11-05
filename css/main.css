@@ -1,0 +1,251 @@
+/*.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+    border: 0px;
+
+}*/
+@media only screen and (max-width: 48em) {
+    /* For mobile phones: */
+    /*[class*="col-"] {
+        width: 100%;
+    }*/
+   .left{
+     display: none;
+
+   }
+   .right{
+     width: 100%;
+     margin: 0px;
+     padding-left: 0px;
+
+   }
+   .content-left{
+     display: none;
+   }
+   .footer{
+     display: run-in;
+   }
+}
+@font-face {
+  font-family: "Jura";
+  src: url("fonts/Jura-Regular.ttf");
+  font-family: 'Roboto';
+  src: url("fonts/Roboto/Roboto-Medium.ttf");
+  src: url("fonts/Roboto/Roboto-Bold.ttf");
+  src: url("fonts/Roboto/Roboto-light.ttf");
+  src: url("fonts/Roboto/Roboto-italic.ttf");
+  font-family: 'Overpass';
+  src: url("fonts/Overpass/Overpass-light.ttf");
+}
+.content-left button{
+  background-color: #2c3e50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+h2{
+  font-family: 'Roboto-light', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+}
+
+h3{
+  font-family: 'Roboto-light';
+  font-weight: normal;
+  font-style: normal;
+
+}
+th {
+  width: auto;
+  text-align: left;
+  height: 30px;
+  font-family: 'Roboto-medium';
+}
+
+td{
+  padding-left: 30px;
+  font-family: 'Roboto'
+
+}
+.button {
+    /*background-color: #4CAF50; /* Green */*/
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    width: 80%;
+
+  }
+.button2 {width: 50%;}
+.button3 {width: 60%;}
+.button4 {width: 40%;}
+.button5 {width: 80%;}
+.button6 {width: 70%;}
+body{
+  margin: 0px;
+}
+p{
+  font-family: 'Roboto-Light';
+  font-size: 17px;
+  text-align: justify;
+}
+.left {
+  position: fixed;
+  /*width: 25%;*/
+  color: white;
+  background-color: #34495e;
+  height: 1000px;
+  padding: 25px;
+  overflow: inherit;
+  float: left;
+  /*padding-top: 50px;*/
+  z-index: 99;
+}
+.left h3, h2 {
+    color: #bdc3c7;
+}
+.left p {
+  font-family: 'Arial';
+}
+.right {
+  /*width: 94.5%;*/
+  /*margin-left: 20%;*/
+  padding: 25px;
+  color: white;
+  background-color: #2c3e50;
+  position: relative;
+  overflow: hidden;
+
+  position: relative;
+   padding-left:30%;
+   box-sizing:border-box;
+}
+.right h2{
+  color: #2c3e50;
+}
+
+.container {
+
+  /*margin-right: 0px;*/
+  margin-left: 0px;
+}
+
+.gambar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.right hr{
+  border: 3px solid #ecf0f1;
+  /*border-radius: 50%;*/
+}
+/**/
+
+
+.content{
+  font-family: 'Roboto-light';
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.resume{
+  height: auto;
+  background: #95a5a6;
+  width: auto;
+  padding: 0.02px;
+  padding-left: 10px;
+
+
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('fonts/fontello.eot?38702571');
+  src: url('fonts/fontello.eot?38702571#iefix') format('embedded-opentype'),
+       url('fonts/fontello.woff2?38702571') format('woff2'),
+       url('fonts/fontello.woff?38702571') format('woff'),
+       url('fonts/fontello.ttf?38702571') format('truetype'),
+       url('fonts/fontello.svg?38702571#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0px;
+
+  text-align: left;
+}
+
+.icon-phone:before { content: '\e800'; }
+.icon-direction:before { content: '\f124'; }
+.icon-facebook-official:before { content: '\f230'; }
+.icon-telegram:before { content: '\f2c6'; }
+
+
+<style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
