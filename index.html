@@ -41,6 +41,7 @@
           <br>
           <button type="button" name="button"><a style="color:white; text-decoration:none" href="gallery.html">Gallery</a></button>
           <button type="button" name="button"><a style="color:white; text-decoration:none" href="index.html">Home</a></button>
+          <button onclick="getLocation()">GPS</button>
         </div>
 
       </div>
@@ -127,7 +128,21 @@
       </div>
     </div>
   </div>
+  <script>
 
+  function getLocation() {
+      if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+  }
+
+  function showPosition(position) {
+      alert("Latitude: " + position.coords.latitude +
+      "<br>Longitude: " + position.coords.longitude);
+  }
+  </script>
 
 </body>
 
